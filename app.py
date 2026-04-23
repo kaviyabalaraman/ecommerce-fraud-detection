@@ -252,6 +252,7 @@ except FileNotFoundError:
         "Please run `python train_model.py` first to generate `fraud_model.pkl`."
     )
     st.stop()
+    columns = pickle.load(open('columns.pkl', 'rb'))
 
 
 # ──────────────────────────────────────────────────────────────────
